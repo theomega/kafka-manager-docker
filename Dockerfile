@@ -19,7 +19,7 @@ RUN mkdir -p /tmp && \
     git clone https://github.com/yahoo/kafka-manager && \
     cd /tmp/kafka-manager && \
     git fetch origin pull/282/head:0.10.0 && \
-    git checkout 0.10.0 && \
+    git checkout 180ee24169d9182503d3ad7f104bb5d8a71fad36 && \
     echo 'scalacOptions ++= Seq("-Xmax-classfile-name", "200")' >> build.sbt
 RUN cd /tmp/kafka-manager && \
     ./sbt clean
